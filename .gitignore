@@ -1,0 +1,6 @@
+src/Core/GenericMonolithWebApplication.Application/bin/
+src/Core/GenericMonolithWebApplication.Application/obj/
+src/Core/GenericMonolithWebApplication.Domain/bin/
+src/Core/GenericMonolithWebApplication.Domain/obj/
+bin/
+obj/
