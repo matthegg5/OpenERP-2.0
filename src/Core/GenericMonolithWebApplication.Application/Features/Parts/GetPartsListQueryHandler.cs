@@ -6,7 +6,7 @@ using GenericMonolithWebApplication.Application.ViewModels;
 
 namespace GenericMonolithWebApplication.Application.Features.Parts.Queries.GetPartsList
 {
-    public class GetPartsListQueryHandler : IRequestHandler<GetPartsListQuery, List<PartsList>>
+    public class GetPartsListQueryHandler : IRequestHandler<GetPartsListQuery, IList<PartsViewModel>>
     {
 
         private readonly IAsyncRepository<Part> _partRepository;
@@ -18,10 +18,10 @@ namespace GenericMonolithWebApplication.Application.Features.Parts.Queries.GetPa
             _partRepository = partRepository;
         }
 
-        public async Task<List<PartsList>> Handle(GetPartsListQuery request, CancellationToken cancellationToken)
+        public async Task<IList<PartsViewModel>> Handle(GetPartsListQuery request, CancellationToken cancellationToken)
         {
             var allParts = (await _partRepository.ListAllAsync()).OrderBy(x => x.PartNum);
-            return _mapper.Map<List<PartsList>>(allParts);
+            return _mapper.Map<List<PartsViewModel>>(allParts);
         }
 
     }

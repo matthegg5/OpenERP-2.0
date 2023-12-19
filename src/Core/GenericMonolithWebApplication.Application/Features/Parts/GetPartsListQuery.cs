@@ -3,7 +3,7 @@ using MediatR;
 
 namespace GenericMonolithWebApplication.Application.Features.Parts.Queries.GetPartsList
 {
-    public class GetPartsListQuery : IRequest<IList<PartsList>>
+    public class GetPartsListQuery : IRequest<IList<PartsViewModel>>
     {
 
     }
