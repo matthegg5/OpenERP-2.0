@@ -9,6 +9,7 @@ namespace GenericMonolithWebApplication.Application.Profiles
         public MappingProfile()
         {
             CreateMap<Part, PartsViewModel>().ReverseMap();
+            CreateMap<PartRevision, PartRevisionsViewModel>().ReverseMap();
         }
     }
 }
