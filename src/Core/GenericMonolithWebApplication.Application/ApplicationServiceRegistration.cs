@@ -1,3 +1,4 @@
+using System;
 using System.Reflection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,10 +9,10 @@ namespace GenericMonolithWebApplication.Application
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddMediatR(cfg =>
             {
-                cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+                cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
             });
 
             return services;
