@@ -22,7 +22,6 @@ namespace GenericMonolithWebApplication.Application.Features.Parts.Commands.Upda
             var partToUpdate = await _partRepository.GetByIdAsync(request.PartId);
             _mapper.Map(request, partToUpdate, typeof(UpdatePartCommand), typeof(Part));
             await _partRepository.UpdateAsync(partToUpdate);
-
         }
     }
     
