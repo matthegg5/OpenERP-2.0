@@ -1,3 +1,4 @@
+#nullable disable
 namespace GenericMonolithWebApplication.Application.ViewModels
 {
     public class PartsViewModel

@@ -2,6 +2,8 @@ using MediatR;
 using FluentValidation;
 using GenericMonolithWebApplication.Application.Contracts.Persistence;
 
+#nullable disable
+
 namespace GenericMonolithWebApplication.Application.Features.Parts.Commands.CreatePart
 {
     public class CreatePartCommand : IRequest<Guid>
