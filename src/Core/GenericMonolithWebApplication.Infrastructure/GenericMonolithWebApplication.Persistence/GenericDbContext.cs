@@ -18,7 +18,7 @@ public class GenericDbContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(GenericDbContext).Assembly);
 
         //seed data here
-        var partGuid = new Guid();
+        var partGuid = new Guid("31ae5210-236f-4e65-ac59-b6b16e204c9e");
         modelBuilder.Entity<Part>().HasData(new Part{
             PartId = partGuid,
             PartNum = "MATT-NEW-PART",

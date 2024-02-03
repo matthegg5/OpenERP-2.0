@@ -2,8 +2,11 @@ src/Core/GenericMonolithWebApplication.Application/bin/
 src/Core/GenericMonolithWebApplication.Application/obj/
 src/Core/GenericMonolithWebApplication.Domain/bin/
 src/Core/GenericMonolithWebApplication.Domain/obj/
+src/API/GenericMonolithWebApplication.API/bin/
+src/API/GenericMonolithWebApplication.API/obj/
 src/Core/GenericMonolithWebApplication.Infrastructure/GenericMonolithWebApplication.Persistence/bin/
 src/Core/GenericMonolithWebApplication.Infrastructure/GenericMonolithWebApplication.Persistence/obj/
+src/Core/GenericMonolithWebApplication.Infrastructure/GenericMonolithWebApplication.Persistence/Migrations/
 bin/
 obj/
 .DS_Store
