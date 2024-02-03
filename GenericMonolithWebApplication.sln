@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMonolithWebApplicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMonolithWebApplication.Application", "src\Core\GenericMonolithWebApplication.Application\GenericMonolithWebApplication.Application.csproj", "{8D685D6B-245A-4C90-8E2D-5F00A496E669}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericMonolithWebApplication.Infrastructure", "GenericMonolithWebApplication.Infrastructure", "{5A42FD88-8EB5-4D7E-995E-F7C0D872E0AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMonolithWebApplication.Persistence", "src\Core\GenericMonolithWebApplication.Infrastructure\GenericMonolithWebApplication.Persistence\GenericMonolithWebApplication.Persistence.csproj", "{A5049DEA-963E-4242-A23C-DBBF11B518CA}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,10 +52,24 @@ Global
 		{8D685D6B-245A-4C90-8E2D-5F00A496E669}.Release|x64.Build.0 = Release|Any CPU
 		{8D685D6B-245A-4C90-8E2D-5F00A496E669}.Release|x86.ActiveCfg = Release|Any CPU
 		{8D685D6B-245A-4C90-8E2D-5F00A496E669}.Release|x86.Build.0 = Release|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Release|x64.Build.0 = Release|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{76D25032-CF10-4075-A803-535B37FC523B} = {DB6062B8-33AA-439B-A8CA-8B717BB244F8}
 		{B73B6301-8D8E-48B0-81D0-8188903DC2CA} = {76D25032-CF10-4075-A803-535B37FC523B}
 		{8D685D6B-245A-4C90-8E2D-5F00A496E669} = {76D25032-CF10-4075-A803-535B37FC523B}
+		{5A42FD88-8EB5-4D7E-995E-F7C0D872E0AE} = {76D25032-CF10-4075-A803-535B37FC523B}
+		{A5049DEA-963E-4242-A23C-DBBF11B518CA} = {5A42FD88-8EB5-4D7E-995E-F7C0D872E0AE}
 	EndGlobalSection
 EndGlobal
