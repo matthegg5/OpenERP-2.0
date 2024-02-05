@@ -9,3 +9,7 @@ dotnet ef migrations add InitialCreate --project ./src/Core/GenericMonolithWebAp
 Use the below command to apply the migrations to the database defined in the appsettings.json connection string.
 
 dotnet ef database update --project ./src/Core/GenericMonolithWebApplication.Infrastructure/GenericMonolithWebApplication.Persistence/GenericMonolithWebApplication.Persistence.csproj --startup-project ./src/API/GenericMonolithWebApplication.API/GenericMonolithWebApplication.API.csproj
+
+To run the application:-
+
+dotnet run --project ./src/API/GenericMonolithWebApplication.API/GenericMonolithWebApplication.API.csproj
