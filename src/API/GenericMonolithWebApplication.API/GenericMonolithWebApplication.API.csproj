@@ -2,7 +2,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\GenericMonolithWebApplication.Application\GenericMonolithWebApplication.Application.csproj" />
-    <ProjectReference Include="..\..\Core\GenericMonolithWebApplication.Infrastructure\GenericMonolithWebApplication.Persistence\GenericMonolithWebApplication.Persistence.csproj" />
+    <ProjectReference Include="..\..\Core\GenericMonolithWebApplication.Persistence\GenericMonolithWebApplication.Persistence.csproj" />
+    <ProjectReference Include="..\..\Core\GenericMonolithWebApplication.Infrastructure\GenericMonolithWebApplication.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
