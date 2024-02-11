@@ -1,5 +1,6 @@
 using GenericMonolithWebApplication.Application;
 using GenericMonolithWebApplication.Infrastructure.Persistence;
+using GenericMonolithWebApplication.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 namespace GenericMonolithWebApplication.API
@@ -10,7 +11,7 @@ namespace GenericMonolithWebApplication.API
         {
             builder.Services.AddApplicationServices();
             builder.Services.AddPersistenceServices(builder.Configuration);
-            //builder.Services.AddInfrastructureServices(builder.Configuration);
+            builder.Services.AddInfrastructureServices(builder.Configuration);
 
             builder.Services.AddControllers();
 

@@ -1,4 +1,5 @@
-﻿using GenericMonolithWebApplication.Domain.Common;
+﻿#nullable disable
+using GenericMonolithWebApplication.Domain.Common;
 using GenericMonolithWebApplication.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
