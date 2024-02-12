@@ -23,7 +23,9 @@ namespace GenericMonolithWebApplication.API
                 .AllowAnyHeader()
                 .AllowCredentials()));
 
-                return builder.Build();
+            builder.Services.AddSwaggerGen();
+
+            return builder.Build();
             
         }
 
@@ -32,6 +34,12 @@ namespace GenericMonolithWebApplication.API
             app.UseCors("open");
             app.UseHttpsRedirection();
             app.MapControllers();
+
+            if(app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
             return app;
         }

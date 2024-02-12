@@ -1,5 +1,6 @@
 #nullable disable
 
+using GenericMonolithWebApplication.API.Utility;
 using GenericMonolithWebApplication.Application.Features.Parts.Commands.CreatePart;
 using GenericMonolithWebApplication.Application.Features.Parts.Commands.DeletePart;
 using GenericMonolithWebApplication.Application.Features.Parts.Commands.UpdatePart;
@@ -59,6 +60,7 @@ namespace GenericMonolithWebApplication.API.Controllers
         }
 
         [HttpGet("export", Name = "ExportParts")]
+        [FileResultContentType("text/csv")]
         public async Task<FileResult> ExportParts()
         {
             var fileDto = await _mediator.Send(new GetPartsExportQuery());
