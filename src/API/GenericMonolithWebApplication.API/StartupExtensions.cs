@@ -25,6 +25,8 @@ namespace GenericMonolithWebApplication.API
 
             builder.Services.AddSwaggerGen();
 
+            builder.Logging.AddConsole();
+
             return builder.Build();
             
         }

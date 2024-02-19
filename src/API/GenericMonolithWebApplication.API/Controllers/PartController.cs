@@ -17,10 +17,12 @@ namespace GenericMonolithWebApplication.API.Controllers
     public class PartController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger _logger;
 
-        public PartController(IMediator mediator)
+        public PartController(IMediator mediator, ILogger<PartController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpGet("all", Name = "GetAllParts")]
