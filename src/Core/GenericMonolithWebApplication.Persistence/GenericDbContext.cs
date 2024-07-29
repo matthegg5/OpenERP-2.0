@@ -1,11 +1,14 @@
 ﻿#nullable disable
 using GenericMonolithWebApplication.Domain.Common;
 using GenericMonolithWebApplication.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Bcpg;
 
 namespace GenericMonolithWebApplication.Infrastructure.Persistence
 {
-    public class GenericDbContext : DbContext
+    public class GenericDbContext : IdentityDbContext<IdentityUser>
     {
         public GenericDbContext(DbContextOptions<GenericDbContext> options) : base(options)
         {
@@ -26,7 +29,7 @@ namespace GenericMonolithWebApplication.Infrastructure.Persistence
                 PartDescription = "MATT-NEW-PART"
             });
             
-            //base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder);
         }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

@@ -15,11 +15,10 @@ namespace GenericMonolithWebApplication.Infrastructure.Persistence
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<GenericDbContext>(options => options.UseMySQL(configuration.GetConnectionString("GenericDbConnectionString")));
-            services.AddDbContext<IdentityDbContext>(options => options.UseMySQL(configuration.GetConnectionString("IdentityDbConnectionString")));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                    .AddEntityFrameworkStores<IdentityDbContext>();
-
+                    .AddEntityFrameworkStores<GenericDbContext>();
+ 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IPartRepository, PartRepository>();
 
