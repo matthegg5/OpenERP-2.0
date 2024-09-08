@@ -8,7 +8,7 @@ src/Core/GenericMonolithWebApplication.Infrastructure/bin/
 src/Core/GenericMonolithWebApplication.Infrastructure/obj/
 src/Core/GenericMonolithWebApplication.Persistence/bin/
 src/Core/GenericMonolithWebApplication.Persistence/obj/
-src/Core/GenericMonolithWebApplication.Persistence/Migrations/
 bin/
 obj/
 .DS_Store
+Publish/
