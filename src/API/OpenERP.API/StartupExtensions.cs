@@ -64,5 +64,23 @@ namespace OpenERP.API
                 throw;
             }
         }
+
+        public static async Task MigrateAsync(this WebApplication app)
+        {
+            using var scope = app.Services.CreateScope();
+            try
+            {
+                var context = scope.ServiceProvider.GetService<OpenERPDbContext>();
+                if (context != null)
+                {
+                    await context.Database.MigrateAsync();
+                }
+            }
+            catch (Exception)
+            {
+                //add logging
+                throw;
+            }
+        }
     }
 }

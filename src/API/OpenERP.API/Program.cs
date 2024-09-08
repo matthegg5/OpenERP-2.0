@@ -9,4 +9,7 @@ var app = builder
 // FOR DEVELOPMENT PURPOSES ONLY
 //await app.ResetDatabaseAsync();
 
+//apply the outstanding migrations on startup
+await app.MigrateAsync();
+
 app.Run();
